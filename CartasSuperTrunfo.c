@@ -1,32 +1,34 @@
 #include <stdio.h>
 
-#include <stdio.h>
 
+int main (){
+    char estado_01[12];
 
+    char estado_02[12];
 
-int main()
+    char codigo_carta_01[4];
+    
+    char codigo_carta_02[4];
 
+    char cidade_01[20];
+    
+    char cidade_02[20];
 
+    int populacao_01;
+    
+    int populacao_02;
 
-{
+    float area_01;
+    
+    float area_02;
 
+    float pib_01;
+    
+    float pib_02;
 
-
-    char estado_01[8] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
-
-    char estado_02[8] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
-
-    char codigo_carta_01[4], codigo_carta_02[4];
-
-    char cidade_01[20], cidade_02[20];
-
-    int populacao_01, populacao_02;
-
-    float area_01, area_02;
-
-    float pib_01, pib_02;
-
-    int pontos_turisticos_01, pontos_turisticos_02;
+    int pontos_turisticos_01;
+    
+    int pontos_turisticos_02;
 
 
 
@@ -40,19 +42,19 @@ int main()
 
     printf("Digite o estado:\n");
 
-    scanf("%c", &estado_01);
+    scanf("%s", &estado_01);
 
 
 
     printf("Digite o codigo da carta:\n");
 
-    scanf("%s", codigo_carta_01);
+    scanf("%s", &codigo_carta_01);
 
 
 
     printf("Digite a cidade:\n");
 
-    scanf("%s", cidade_01);
+    scanf("%s", &cidade_01);
 
 
 
@@ -92,19 +94,19 @@ int main()
 
     printf("Digite o estado:\n");
 
-    scanf("%c", &estado_02);
+    scanf("%s", &estado_02);
 
 
 
     printf("Digite o codigo da carta:\n");
 
-    scanf("%s", codigo_carta_02);
+    scanf("%s", &codigo_carta_02);
 
 
 
     printf("Digite a cidade:\n");
 
-    scanf("%s", cidade_02);
+    scanf("%s", &cidade_02);
 
 
 
@@ -130,9 +132,6 @@ int main()
 
     scanf("%d", &pontos_turisticos_02);
 
-   
-
-    printf("\n");
 
 
 
@@ -142,7 +141,7 @@ int main()
 
     printf("==== CARTA 01 ====\n");
 
-    printf("Estado: %c\n", estado_01);
+    printf("Estado: %s\n", estado_01);
 
     printf("Codigo: %s\n", codigo_carta_01);
 
@@ -160,17 +159,13 @@ int main()
 
 
 
-    printf("\n");
-
-
-
     //Impressão de Dados da Carta 02
 
 
 
     printf("==== CARTA 02 ====\n");
 
-    printf("Estado: %c\n", estado_02);
+    printf("Estado: %s\n", estado_02);
 
     printf("Codigo: %s\n", codigo_carta_02);
 
@@ -186,16 +181,8 @@ int main()
 
 
 
-
-
-
-
-    return 0;
-
-
+return 0;
 
 
 
 }
-
-
