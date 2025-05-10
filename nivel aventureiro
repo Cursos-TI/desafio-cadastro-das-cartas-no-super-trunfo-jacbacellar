@@ -98,10 +98,7 @@ scanf("%d", &pontos_turisticos_01);
 
 // Cálculos carta 01
 densidade_populacional_01 = populacao_01 / area_01;
-pib_per_capita_01= pib_01 / populacao_01;
-
-   
-
+pib_per_capita_01= pib_01 * 1000000000 / populacao_01;
 
 
 
@@ -110,7 +107,6 @@ pib_per_capita_01= pib_01 / populacao_01;
 
 
 printf("==== DADOS DA CARTA 02 ====\n");
-
 
 
 printf("Digite o estado:\n");
@@ -156,8 +152,7 @@ scanf("%d", &pontos_turisticos_02);
     
 // Cálculos carta 02 
 densidade_populacional_02 = populacao_02 / area_02;
-pib_per_capita_02 = pib_02 / populacao_02;
-
+pib_per_capita_02 = pib_02 * 1000000000 / populacao_02;
    
 
 printf("\n");
@@ -176,7 +171,7 @@ printf("Codigo: %s\n", codigo_carta_01);
 
 printf("Cidade: %s\n", cidade_01);
 
-printf("Populacao: %d Mil\n", populacao_01);
+printf("Populacao: %d\n", populacao_01);
 
 printf("Area: %.2f km²\n", area_01);
 
@@ -186,7 +181,7 @@ printf("Pontos turísticos: %d\n", pontos_turisticos_01);
 
 printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_01);
    
-printf("PIB per capita: %.2f R$\n", pib_per_capita_01);
+printf("PIB per capita: %.2f reais\n", pib_per_capita_01);
 
 
 
@@ -209,7 +204,7 @@ printf("Codigo: %s\n", codigo_carta_02);
 
 printf("Cidade: %s\n", cidade_02);
 
-printf("Populacao: %d Mil\n", populacao_02);
+printf("Populacao: %d\n", populacao_02);
 
 printf("Area: %.2f km²\n", area_02);
 
@@ -219,7 +214,7 @@ printf("Pontos turísticos: %d\n", pontos_turisticos_02);
 
 printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_02);
     
-printf("PIB per capita: %.2f R$\n", pib_per_capita_02);
+printf("PIB per capita: %.2f reais\n", pib_per_capita_02);
 
 
 
